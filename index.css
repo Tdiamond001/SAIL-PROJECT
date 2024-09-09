@@ -28,6 +28,8 @@ html{
 body{
     background: #000;
     color: white;
+    padding: 15px;
+    margin-top: 5vh;
 }
 
 section{
@@ -81,6 +83,11 @@ section{
     justify-content: center;
     align-items: center;
 }   
+
+.home-content{
+    margin-left: 20px;
+    margin-top: 30px;
+}
 
 .home-content h3{
     font-size: 3.2rem;
@@ -176,7 +183,7 @@ section {
 }
 
 .about-img img{
-    width: 40vw;
+    width: 30vw;
 }
 
 .about-content .heading{
