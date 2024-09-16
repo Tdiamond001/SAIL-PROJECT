@@ -183,7 +183,19 @@ section {
 }
 
 .about-img img{
-    width: 30vw;
+    width: 40vw;
+    padding-top: 0;
+}
+
+@media(max-width:600px){
+    .about{
+        display: block;
+    }
+
+    .about-img img {
+       align-items: center;
+       justify-content: center;
+    }
 }
 
 .about-content .heading{
@@ -194,6 +206,13 @@ section {
 .about-content{
     margin-left: 40px;
     
+}
+
+@media(max-width:600px){
+    .about-content{
+        margin-left: 0;
+        padding-top: 30px;
+    }
 }
 
 .about-content h2{
@@ -263,12 +282,40 @@ section {
 .portfolio h2{
     margin-bottom: 4rem;
 }
-.portfolio-container{
+
+.portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
     gap: 2.5rem;
-}
+    align-items: center;
+  }
+  
+  /* Tablet view and below */
+  @media (max-width: 1100px) {
+    .portfolio-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  /* Phone view and below */
+  @media (max-width: 600px) {
+    .portfolio-container {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+  }
+  
+  /* Optional: add padding for phone view */
+  /* @media (max-width: 600px) {
+    .portfolio-container {
+      padding: 0 1rem;
+    }
+  } */
+  
+
+  
+  
+
 
 .portfolio-container .portfolio-box{
     position: relative;
